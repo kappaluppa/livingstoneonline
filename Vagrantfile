@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do | config |
   map_ports config, ports
   config.vm.provision :docker_compose
   config.vm.provider :virtualbox do | provider |
-    provider.name = "livingstone"
+    provider.name = "livingstone-fork"
     provider.cpus = settings['cpus']
     provider.memory = settings['memory']
   end
